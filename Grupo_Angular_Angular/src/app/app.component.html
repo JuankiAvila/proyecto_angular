@@ -1,0 +1,24 @@
+<div class="title">
+  <h1>JUEGO DE LAS LLAVES</h1>
+</div>
+<div class="score-board">
+  <div id="user-label" class="badge">Usu.</div>
+  <div id="comp-label" class="badge">Comp.</div>
+  <span id="user-score">{{ pointsUser }}</span>:<span id="comp-score">{{ pointsComp }}</span>
+</div>
+<p class="info-game">{{result}}</p>
+<p class="pista">{{pista}}</p>
+
+<div class="choices">
+    <div class="choice" (click)="play('L')">
+      <img src="{{imagen_izq}}" />
+    </div>
+    <div class="choice" (click)="play('R')">
+      <img src="{{imagen_der}}" />
+    </div>
+</div>
+<div class="botones">
+  <button class="btn" (click)="borrar()">RESET</button>
+  <button class="btn" (click)="pista_funcion()">PISTA</button>
+</div>
+<p class="info-game">Selecciona tu jugada</p>

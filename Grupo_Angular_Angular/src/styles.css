@@ -1,0 +1,10 @@
+/* Para que ocupe toda la ventana y se expanda sin márgenes ni relleno */
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#333333;
+    color: white;
+}
