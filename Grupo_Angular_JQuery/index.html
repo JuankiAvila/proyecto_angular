@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Juego de las llaves</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <!-- js -->
+    <script src="js/script.js"></script>
+</head>
+
+<body style="background-color:#333333 ;">
+    <div class="title">
+        <h1>JUEGO DE LAS LLAVES</h1>
+    </div>
+    <div class="score-board">
+        <div id="user-label" class="badge">Usu.</div>
+        <div id="comp-label" class="badge">Comp.</div>
+        <span id="contador_player" style="color :white ;">0</span><span style="color :white ;">:</span><span
+            id="contador_ia" style="color :white ;">0</span>
+    </div>
+    <p class="info-game" id="texto_esperando">Esperando jugada...</p>
+    <p class="pista" id="texto_pista"></p>
+    <div class="choices">
+        <div class="choice">
+            <img id="izquierda" src="imagenes/closed1.png" />
+        </div>
+        <div class="choice">
+            <img id="derecha" src="imagenes/closed2.png" />
+        </div>
+    </div>
+    <div class="botones">
+        <button class="btn" id="boton_reinicio">RESET</button>
+        <button class="btn" id="boton_pista">PISTA</button>
+    </div>
+    <p class="info-game">Selecciona tu jugada</p>
+</body>
+
+</html>
